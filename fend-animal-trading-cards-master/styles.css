@@ -1,0 +1,107 @@
+/*- Set box-sizing property for entire card -*/
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*- Set font family and font color for entire card -*/
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #F1F1E7;
+}
+
+/*== Card Layout ==*/
+
+/*- Styling the card as a typical container class -*/
+.container {
+    /*background-color: #1E1711;*/
+    border: 1px solid #F1F1E7;
+    max-width: 360px;
+    max-height: 680px;
+    margin: 0 auto;
+    
+}
+
+/*- Create gradient class for card background, as diagonal gradient -*/
+.diagonal-gradient {
+    background: linear-gradient(to bottom right, #8C3925, #1E1711);
+}
+
+/*- created a class for the shadow and applied it to the card container.
+    Has vendor prefixes for better browser support -*/
+.card-shadow {
+    -webkit-box-shadow: 8px 8px 2px lightgrey;
+    -moz-box-shadow:    8px 8px 2px lightgrey;
+    box-shadow:         8px 8px 2px lightgrey;
+}
+
+/*== Card Content and Image ==*/
+
+/*- A class to produce a border around the content, and other styling if needed -*/
+.content {
+    border: 1px solid #F1F1E7;
+    border-radius: 10px;
+    margin: 10px 29px;
+    padding: 10px;
+}
+
+/*- Styling the header with animal name -*/
+h3 {
+    text-align: left;
+    margin: 10px 15px;
+    padding: 10px 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*- Styling the image with animal picture, centering the image in the card -*/
+img {
+    width: 300px;
+    display: block;
+    text-align: center;
+    border: 1px solid #F1F1E7;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*- Styling the fun fact using class fun-fact and adding font properties -*/
+.fun-fact {
+    font-size: 1.0em;
+    font-style: italic;
+    line-height: 1.2;
+    text-align: left;
+    margin: 5px;
+    padding: 5px;
+}
+
+/*- Styling the list and list items -*/
+ul {
+    text-align: left;
+    list-style: none;
+    font-size: 1.1em;
+    padding: 5px;
+    margin: 5px;
+    line-height: 1.2;
+}
+
+/*- Styling the span to provide a bold item description, using a custom class -*/
+.bold-span {
+    font-weight: bold;
+}
+
+/*- Styling the information section with description class -*/
+.description {
+    font-size: 1.2em;
+    line-height: 1.2;
+    text-align: left;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+
+
